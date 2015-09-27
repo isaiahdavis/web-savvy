@@ -10,6 +10,7 @@
 			border: 0;
 			outline: none;
 		}
+
 	</style>
 </head>
 <body>
@@ -35,6 +36,7 @@
 	(function(){
 
 		// Variables should be declared at the top whenever possible
+
 		var win = window, // list variables using ','
 			doc = window.document || document,
 			body = window.document.body || document.body;
@@ -42,7 +44,7 @@
 		console.log(); // utilize this within dev tools to debug or for testing
 
 		// Functions: Execute blocks of code on call();
-		// Flexible functions allow for multiple use and avoid
+		// Flexible functions (code) allow for multiple use and avoid
 		// repeating inefficient code term: "DRY" - DON'T REPEAT YOURSELF
 
 		function output (data){
@@ -53,10 +55,10 @@
 		output(doc); // instead of console.log(doc);
 		output(body); // instead of console.log(body);
 
-		doc.innerHTML = "Inspect Element >> console";
+		body.innerHTML = "Inspect Element >> console";
 
 
-	})();
+	})( );
 
 
 	// 
