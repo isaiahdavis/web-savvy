@@ -21,17 +21,17 @@
 
 	// THE 'WINDOW' IS KING
 
-	// It is important to note that all methods, and properties derive from the
-	// window object. Meaning 'window' is the highest point of access control
-	// in javascript.
+		// It is important to note that all methods, and properties derive from the
+		// window object. Meaning 'window' is the highest point of access control
+		// in javascript.
 
-	// Variable Polluting
-	// • All variable declared assign themselves automatically to the window object
-	// thus they are able to be accessed globally or whenever you call them.
+		// Variable Polluting
+		// • All variable declared assign themselves automatically to the window object
+		// thus they are able to be accessed globally or whenever you call them.
 
-	// • Variables can rewrite themselves which is not always ideal as you can
-	// overwrite core methods and variables essential making your site unstable
-	// and can break things.
+		// • Variables can rewrite themselves which is not always ideal as you can
+		// overwrite core methods and variables essential making your site unstable
+		// and can break things.
 
 	(function(){
 
@@ -44,8 +44,8 @@
 		console.log(); // utilize this within dev tools to debug or for testing
 
 		// Functions: Execute blocks of code on call();
-		// Flexible functions (code) allow for multiple use and avoid
-		// repeating inefficient code term: "DRY" - DON'T REPEAT YOURSELF
+			// Flexible functions (code) allow for multiple use and avoid
+			// repeating inefficient code term: "DRY" - DON'T REPEAT YOURSELF
 
 		function output (data){
 			console.log(data);
@@ -56,6 +56,24 @@
 		output(body); // instead of console.log(body);
 
 		body.innerHTML = "Inspect Element >> console";
+
+		// CREATING DOM ELEMENTS
+
+		// document.createElement('div'); DRY method
+		
+		function create(elem){
+			var newElem = doc.createElement(elem);
+			body.appendChild(newElem);
+		}
+
+		create('div');
+		create('p');
+		create('a');
+
+		
+
+
+
 
 
 	})( );
